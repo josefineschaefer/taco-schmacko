@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Atkinson Hyperlegible' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Funnel+Display:wght@300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Taco Schmacko 🌮</title>
+</head>
+
+<body>
+  <div class="bg-img">
+    <nav class="topnav">
+      <a href="#home">Taco Schmacko 🌮</a>
+      <a href="#order">Order now</a>
+      <a href="#menu">Browse Menu</a>
+      <a href="#favorites">Customer Favorites</a>
+      <a href="#work">Work for us</a>
+      <a href="#contact">Get in touch</a>
+    </nav>
+    <h1>Taco </br>Schmacko</h1>
+  </div>
+  <main>
+    <section class="og-story">
+      <h2> It all started with love ... </h2>
+      <p>
+        At Taco Schmacko, we believe that tacos are more than just food - they
+        are a way of life. Our passion for creating the perfect taco has driven
+        us to source the freshest ingredients and craft unique recipes that
+        will tantalize your taste buds. Whether you're a meat lover or a vegan,
+        we have something for everyone. Join us on this delicious journey and
+        experience the magic of Taco Schmacko!
+      </p>
+    </section>
+
+    <section class="order-section">
+      <h3 id="order">Get your fix now ⚡️</h3>
+      <p>
+        Ready to order your delicious tacos? Click the button below to get
+        started!
+      </p>
+      <button>Order Now</button>
+      <h3>Choose your fillings</h3>
+      <p>
+        We've got a range of mouth-watering fillings lined up for you - check it
+        out:
+      </p>
+      <ul class="filling-list">
+        <li>
+          <div class="card">
+            <img src="assets/filling_ground-beef.png" alt="Ground Beef" style="width:100%">
+            <div class="container">
+              <h4>Organic Beef</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="assets/filling_crispy-chicken.png" alt="fried chicken" style="width:100%">
+            <div class="container">
+              <h4>Fried Chicken</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="assets/fillings_mushrooms.png" alt="fried Mushrooms" style="width:100%">
+            <div class="container">
+              <h4>Mushrooms</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="assets/fillings_vegan-chicken.png" alt="Vegan Chicken" style="width:100%">
+            <div class="container">
+              <h4>Vegan Chicken</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="assets/filling_fried-tofu.png" alt="Tofu" style="width:100%">
+            <div class="container">
+              <h4>Fried Tofu</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="assets/filling_paprika.png" alt="Paprika" style="width:100%">
+            <div class="container">
+              <h4>Paprika</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="assets/filling_gouda.png" alt="Gouda" style="width:100%">
+            <div class="container">
+              <h4>Gouda</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="assets/filling_feta.png" alt="Feta" style="width:100%">
+            <div class="container">
+              <h4>Feta</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="assets/filling_cheddar.png" alt="Cheddar" style="width:100%">
+            <div class="container">
+              <h4>Cheddar</h4>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="filling-requests">
+        <p>Don't see your favorite filling? Let us know!</p>
+        <form action="submit_favorite.html" method="post">
+          <label for="favorite">Your favorite taco filling:</label>
+          <input type="text" id="favorite" name="favorite" required />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <h3> Choose your Sauce</h3>
+      <ul class="sauce-list">
+        <li>
+          <div class="card">
+            <img src="assets/fillling_guacamole.png" alt="Guacamole" style="width:100%">
+            <div class="container">
+              <h4><b>Guacamole</b></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="assets/sauce_red-taco.png" alt="Taco Schmacko Signature" style="width:100%">
+            <div class="container">
+              <h4><b>Taco Schmacko Signature</b></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="assets/sauce_siracha.png" alt="Siracha Mayo" style="width:100%">
+            <div class="container">
+              <h4><b>Siracha Mayo</b></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          TODO: Add salsa verde image
+          <div class="card">
+            <img src="assets/fillling_guacamole.png" alt="Salsa Verde" style="width:100%">
+            <div class="container">
+              <h4><b>Salsa Verde</b></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="assets/sauce_red-taco.png" alt="Red Taco Sauce 🌶️" style="width:100%">
+            <div class="container">
+              <h4><b>Red Taco Sauce 🌶️</b></h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          TODO: add cilantro lime image
+          <div class="card">
+            <img src="assets/fillling_guacamole.png" alt="Cilantro Lime" style="width:100%">
+            <div class="container">
+              <h4><b>Cilantro Lime</b></h4>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <div class="socials">
+      <h2>Follow Us</h2>
+      <p>Come find us on Socials:</p>
+      <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+      <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+      <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+      <a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
+    </div>
+    <p>Sign up for our newsletter:</p>
+    <form action="subscribe_newsletter.html" method="post">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+    <p>2025 | DevFest Brussels | Merci </p>
+  </footer>
+</body>
+
+</html>
