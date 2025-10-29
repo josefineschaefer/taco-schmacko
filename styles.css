@@ -11,8 +11,11 @@ body {
 }
 
 main {
-  padding: 35px;
   background-color: #fdd99c;
+}
+
+section {
+  padding: 40px;
 }
 
 .bg-img {
@@ -118,6 +121,13 @@ h4 {
   background-color: #f2c36d;
   padding: 15px;
   border-radius: 10px;
+}
+
+.taco-table-img {
+    display: block;
+  width: 100vw;
+  max-height: 400px;
+  object-fit: cover;
 }
 
 .socials a {
