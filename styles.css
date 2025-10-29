@@ -65,6 +65,18 @@ h1 {
   left: 35px;
 }
 
+.img-container {
+  float: right;
+  max-width: 40%;
+}
+
+.taco-night-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 40%;
+}
+
+
 button {
   background-color: #000;
   color: #f2f2f2;
@@ -77,13 +89,6 @@ button {
 button:focus {
   outline: 2px solid #000;
   outline-offset: 2px;
-}
-
-footer {
-  background-color: #f2f2f2;
-  text-align: center;
-  padding: 20px;
-  margin-top: auto;
 }
 
 ul {
@@ -124,10 +129,23 @@ h4 {
 }
 
 .taco-table-img {
-    display: block;
+  display: block;
   width: 100vw;
   max-height: 400px;
   object-fit: cover;
+}
+
+footer {
+  text-align: left;
+  padding: 20px;
+  margin-top: auto;
+}
+
+.og-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
 }
 
 .socials a {
