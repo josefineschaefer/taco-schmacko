@@ -12,7 +12,7 @@ body {
 
 main {
   padding: 35px;
-  background-color: papayawhip;
+  background-color: #fdd99c;
 }
 
 .bg-img {
@@ -35,7 +35,7 @@ main {
 .topnav a {
   color: #000;
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: #fdd99c;
   padding: 3px 16px;
   border-radius: 10px;
   text-decoration: none;
@@ -55,10 +55,10 @@ h1 {
   font-family: "Climate Crisis", sans-serif;
   font-weight: 400;
   font-size: 6rem;
-  color: #f2f2f2;
+  color: #fdd99c;
   text-align: left;
   position: absolute;
-  bottom: -35px;
+  bottom: -103px;
   left: 35px;
 }
 
@@ -105,6 +105,7 @@ h4 {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px 10px 0 0;
   transition: 0.3s;
   background-color: #faf9f6;
 }
