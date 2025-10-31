@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  --light-orange: #fdd99c; 
 }
 
 body {
@@ -11,7 +12,7 @@ body {
 }
 
 main {
-  background-color: #fdd99c;
+  background-color: var(--light-orange);
 }
 
 section {
@@ -38,7 +39,7 @@ section {
 .topnav a {
   color: #000;
   text-align: center;
-  background-color: #fdd99c;
+  background-color: var(--light-orange);
   padding: 3px 16px;
   border-radius: 10px;
   text-decoration: none;
@@ -51,23 +52,41 @@ section {
 }
 
 .topnav a:focus {
-  outline: 2px solid #000;
+  outline: 2px solid var(--light-orange);;
+  outline-offset: 2px;
 }
 
 h1 {
   font-family: "Climate Crisis", sans-serif;
   font-weight: 400;
   font-size: 6rem;
-  color: #fdd99c;
+  line-height: 1.2;
+  color: var(--light-orange);
   text-align: left;
   position: absolute;
-  bottom: -103px;
+  bottom: -100px;
   left: 35px;
 }
+
+a {
+  color: #000;
+}
+
+a:hover {
+  background-color: #555;
+  color: var(--light-orange)
+}
+
+a:focus {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
 
 .img-container {
   float: right;
   max-width: 40%;
+  padding: 20px;
 }
 
 .taco-night-img {
@@ -75,7 +94,6 @@ h1 {
   height: auto;
   border-radius: 40%;
 }
-
 
 button {
   background-color: #000;
