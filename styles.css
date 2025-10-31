@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  --light-orange: #fdd99c; 
+  --light-orange: #fdd99c;
 }
 
 body {
@@ -13,6 +13,33 @@ body {
 
 main {
   background-color: var(--light-orange);
+}
+
+/* Skip link styles */
+.skip {
+  position: absolute; 
+  clip-path: inset(100%); 
+  top: auto;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.skip:focus {
+  clip-path: inset(0%); 
+  top: 0;
+  left: 0;
+  display: block;
+  background-color: var(--light-orange);
+  padding: 20px;
+  height: auto;
+  width: auto;
+  z-index: 1000; 
+}
+
+.skip:hover{
+  background-color: #000;
+  color: #f2f2f2;
 }
 
 section {
@@ -52,7 +79,7 @@ section {
 }
 
 .topnav a:focus {
-  outline: 2px solid var(--light-orange);;
+  outline: 2px solid var(--light-orange);
   outline-offset: 2px;
 }
 
@@ -74,14 +101,13 @@ a {
 
 a:hover {
   background-color: #555;
-  color: var(--light-orange)
+  color: var(--light-orange);
 }
 
 a:focus {
   outline: 2px solid #000;
   outline-offset: 2px;
 }
-
 
 .img-container {
   float: right;
