@@ -1,5 +1,8 @@
 * {
   box-sizing: border-box;
+}
+
+:root {
   --light-orange: #fdd99c;
 }
 
@@ -9,10 +12,6 @@ body {
   flex-direction: column;
   line-height: 1.6;
   margin: 0;
-}
-
-main {
-  background-color: var(--light-orange);
 }
 
 /* Skip link styles */
@@ -43,7 +42,7 @@ main {
 }
 
 section {
-  padding: 40px;
+  padding: 40px 40px 0 40px;
 }
 
 .bg-img {
@@ -87,12 +86,16 @@ h1 {
   font-family: "Climate Crisis", sans-serif;
   font-weight: 400;
   font-size: 6rem;
-  line-height: 1.2;
+  line-height: 1;
   color: var(--light-orange);
   text-align: left;
   position: absolute;
-  bottom: -100px;
+  bottom: -39px;
   left: 35px;
+}
+
+h2 {
+  min-width: 30%;
 }
 
 a {
@@ -121,10 +124,16 @@ a:focus {
   border-radius: 40%;
 }
 
+.column-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
 button {
   background-color: #000;
   color: #f2f2f2;
-  padding: 2px 7px;
+  padding: 8px;
   border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
@@ -133,6 +142,11 @@ button {
 button:focus {
   outline: 2px solid #000;
   outline-offset: 2px;
+}
+
+.og-story-btn{
+  display: block; 
+  margin: inherit;
 }
 
 ul {
