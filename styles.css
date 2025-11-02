@@ -87,7 +87,7 @@ h1 {
   font-weight: 400;
   font-size: 6rem;
   line-height: 1;
-  color: var(--light-orange);
+  color: white;
   text-align: left;
   position: absolute;
   bottom: -39px;
@@ -178,6 +178,14 @@ h4 {
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.vegan-icon {
+  color: #146e17;
+}
+
+.spicy-icon {
+  color: #a61a1a;
 }
 
 .filling-requests {
