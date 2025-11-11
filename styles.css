@@ -144,6 +144,11 @@ button:focus {
   outline-offset: 2px;
 }
 
+button:hover {
+color: black; 
+background-color: var(--light-orange);
+}
+
 .og-story-btn{
   display: block; 
   margin: inherit;
@@ -224,4 +229,60 @@ footer {
 .socials a:focus {
   outline: 2px solid #000;
   outline-offset: 2px;
+}
+
+dialog {
+  width: 60%; 
+  overflow: auto;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+dialog::backdrop {
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+}
+
+.address-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="number"] {
+  padding: 8px;
+  }
+
+  input[type="text"]:focus, input[type="number"]:focus{
+    outline: 2px solid #000;
+    outline-offset: 2px;  
+  }
+
+.close {
+  float: right;
+  color: black;
+  background-color: white;;
+  font-size: 28px;
+  padding: 0 10px;
+  border: none;
+}
+
+.close:hover{
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+}
+
+.close:focus{
+  background-color: black;
+  color: white; 
+  outline: 2px solid black;
+  outline-offset: 2px;
+  cursor: pointer;
 }

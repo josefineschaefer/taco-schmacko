@@ -11,6 +11,7 @@
   <script src="https://kit.fontawesome.com/16e1512a3b.js" crossorigin="anonymous"></script>
   <title>Taco Schmacko 🌮</title>
 </head>
+
 <body>
   <header>
     <a href="#main" class="skip">Skip to main content</a>
@@ -33,7 +34,21 @@
         Ready to order your delicious tacos? Click the button below to get
         started!
       </p>
-      <button>Order Now</button>
+      <button id="orderBtn">Add your address</button>
+      <dialog id="orderModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content">
+          <button class="close">&times;</button>
+          <h2 id="modalTitle">Add your address</h2>
+          <form class="address-form">
+            <input type="text" name="name" placeholder="Enter your name here" />
+            <input type="text" name="street" placeholder="Enter your street here" />
+            <input type="number" name="postal" placeholder="Enter your postal code here" />
+            <input type="text" name="city" placeholder="Enter your city here" />
+          </form>
+          <button>Save</button>
+          <button>Cancel</button>
+        </div>
+      </dialog>
       <h3>Pick your Protein</h3>
       <p>
         We've got a range of mouth-watering fillings lined up for you - check it
@@ -227,6 +242,20 @@
     </form>
     <p>2025 | DevFest Brussels | Merci </p>
   </footer>
+
+  <script>
+    var modal = document.getElementById("orderModal");
+    var btn = document.getElementById("orderBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.addEventListener("click", () => {
+      modal.showModal();
+    });
+
+    span.onclick = function () {
+      modal.close();
+    }
+  </script>
 </body>
 
 </html>
