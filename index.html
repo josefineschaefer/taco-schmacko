@@ -40,10 +40,14 @@
           <button class="close">&times;</button>
           <h2 id="modalTitle">Add your address</h2>
           <form class="address-form">
-            <input type="text" name="name" placeholder="Enter your name here" />
-            <input type="text" name="street" placeholder="Enter your street here" />
-            <input type="number" name="postal" placeholder="Enter your postal code here" />
-            <input type="text" name="city" placeholder="Enter your city here" />
+            <label for="name">Full Name:</label>
+            <input id="name" type="text" name="name" placeholder="Enter your name here" />
+            <label for="street">Street Address:</label>
+            <input id="street" type="text" name="street" placeholder="Enter your street here" />
+            <label for="postal">Postal Code:</label>
+            <input id="postal" type="number" name="postal" placeholder="Enter your postal code here" />
+            <label for="city">City:</label>
+            <input id="city" type="text" name="city" placeholder="Enter your city here" />
           </form>
           <button>Save</button>
           <button>Cancel</button>
