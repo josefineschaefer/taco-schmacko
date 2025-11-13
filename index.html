@@ -16,7 +16,10 @@
   <header>
     <a href="#main" class="skip">Skip to main content</a>
     <div class="bg-img">
-      <nav class="topnav">
+      <nav class="topnav" id="topnav">
+        <a class="menu-toggle" href="javascript:void(0);" onclick="toggleMenu()"> 
+          <i class="fa-solid fa-bars"></i>
+        </a>
         <a href="#home">Taco Schmacko 🌮</a>
         <a href="#order">Order now</a>
         <a href="#menu">Browse Menu</a>
@@ -79,7 +82,8 @@
           <div class="card">
             <img src="assets/fillings_vegan-chicken.png"
               alt="Crispy vegan chicken nuggets arranged in a small wooden bowl.">
-            <h4>Vegan Chicken <i class="fa-solid fa-seedling vegan-icon" role="img" aria-label="vegan ingredient"></i></h4>
+            <h4>Vegan Chicken <i class="fa-solid fa-seedling vegan-icon" role="img" aria-label="vegan ingredient"></i>
+            </h4>
           </div>
         </li>
         <li>
@@ -108,7 +112,8 @@
         <li>
           <div class="card">
             <img src="assets/fillings_cilantro.png" alt="Freshly chopped cilantro leaves arranged in a small bowl">
-            <h4>Extra Cilantro <i class="fa-solid fa-seedling vegan-icon" role="img" aria-label="vegan ingredient"></i></h4>
+            <h4>Extra Cilantro <i class="fa-solid fa-seedling vegan-icon" role="img" aria-label="vegan ingredient"></i>
+            </h4>
           </div>
         </li>
         <li>
@@ -161,7 +166,8 @@
         <li>
           <div class="card">
             <img src="assets/sauce_red-taco.png" alt="Bowl of Schmacko Signature sauce with vibrant red color.">
-            <h4>Schmacko Signature <i class="fa-solid fa-pepper-hot spicy-icon" role="img" aria-label="spicy ingredient"></i></h4>
+            <h4>Schmacko Signature <i class="fa-solid fa-pepper-hot spicy-icon" role="img"
+                aria-label="spicy ingredient"></i></h4>
           </div>
           </div>
         </li>
@@ -176,14 +182,16 @@
           <div class="card">
             <img src="assets/sauce_salsa-verde.png" alt="Bowl of vibrant green salsa verde garnished with fresh herbs.">
 
-            <h4>Salsa Verde <i class="fa-solid fa-seedling vegan-icon" role="img"aria-label="vegan ingredient"></i></h4>
+            <h4>Salsa Verde <i class="fa-solid fa-seedling vegan-icon" role="img" aria-label="vegan ingredient"></i>
+            </h4>
           </div>
           </div>
         </li>
         <li>
           <div class="card">
             <img src="assets/sauce_red-taco.png" alt="Bowl of vibrant red taco sauce.">
-            <h4>Red Taco Sauce <i class="fa-solid fa-pepper-hot spicy-icon" role="img" aria-label="spicy ingredient"></i></h4>
+            <h4>Red Taco Sauce <i class="fa-solid fa-pepper-hot spicy-icon" role="img"
+                aria-label="spicy ingredient"></i></h4>
           </div>
         </li>
         <li>
@@ -258,6 +266,15 @@
 
     span.onclick = function () {
       modal.close();
+    }
+
+    function toggleMenu() {
+      var x = document.getElementById("topnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
     }
   </script>
 </body>
