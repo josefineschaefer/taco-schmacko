@@ -3,7 +3,42 @@
 }
 
 :root {
+  /* Colors */
+  --base-white: #ffffff;
+  --base-black: #000000;
   --spicy-red: #d82226;
+  --off-white: #faf9f6;
+  --veggy-green: #146e17;
+  --dark-gray: #555555;
+
+  /* Spacing */
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 15px;
+  --spacing-lg: 20px;
+  --spacing-xl: 25px;
+  --spacing-2xl: 35px;
+  --spacing-3xl: 40px;
+
+  /* Border-radius */
+  --border-radius-sm: 6px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 25px;
+  --border-radius-xl: 40%;
+
+  /* Typography  */
+  --font-size-sm: 1rem;
+  --font-size-md: 1.3rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2.5rem;
+  --font-size-3xl: 4rem;
+  --font-size-4xl: 6rem;
+  --font-size-icon: 28px;
+
+/* Focus States  */
+  --focus-outline-black: 2px solid var(--base-black);
+  --focus-outline-white: 2px solid var(--base-white);
+  --focus-offset: 2px;
 }
 
 body {
@@ -29,21 +64,21 @@ body {
   top: 0;
   left: 0;
   display: block;
-  background-color: black;
-  color: white;
-  padding: 20px;
+  background-color: var(--base-black);
+  color: var(--base-white);
+  padding: var(--spacing-lg);
   height: auto;
   width: auto;
   z-index: 1000;
 }
 
 .skip:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--base-white);
+  color: var(--base-black);
 }
 
 section {
-  padding: 40px 40px 0 40px;
+  padding: var(--spacing-3xl);
 }
 
 .bg-img {
@@ -60,9 +95,9 @@ section {
 .topnav {
   display: flex;
   overflow: hidden;
-  padding: 15px 35px;
+  padding: var(--spacing-md) var(--spacing-2xl);
   align-items: flex-start;
-  gap: 25px;
+  gap: var(--spacing-xl);
 }
 
 .menu-toggle {
@@ -70,34 +105,34 @@ section {
 }
 
 .topnav a {
-  color: black;
+  color: var(--base-black);
   text-align: center;
-  background-color: white;
+  background-color: var(--base-white);
   padding: 3px 16px;
-  border-radius: 10px;
+  border-radius: var(--border-radius-md);
   text-decoration: none;
 }
 
 .topnav a:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--base-black);
+  color: var(--base-white);
 }
 
 .topnav a:focus {
-  outline: 2px solid white;
-  outline-offset: 2px;
+  outline: var(--focus-outline-white);
+  outline-offset: var(--focus-offset);
 }
 
 h1 {
   font-family: "Climate Crisis", sans-serif;
   font-weight: 400;
-  font-size: 6rem;
+  font-size: var(--font-size-4xl);
   line-height: 1;
-  color: white;
+  color: var(--base-white);
   text-align: left;
   position: absolute;
   bottom: -39px;
-  left: 35px;
+  left: var(--spacing-2xl);
 }
 
 h2 {
@@ -106,58 +141,58 @@ h2 {
 
 h4 {
   text-align: center;
-  margin: 5px;
-  padding: 5px;
+  margin: var(--spacing-xs);
+  padding: var(--spacing-xs);
 }
 
 a {
-  color: black;
+  color: var(--base-black);
 }
 
 p a:hover {
-  background-color: #555;
-  color: white;
+  background-color: var(--dark-gray);
+  color: var(--base-white);
 }
 
 a:focus {
-  outline: 2px solid black;
-  outline-offset: 2px;
+  outline: var(--focus-outline-white);
+  outline-offset: var(--focus-offset);
 }
 
 .img-container {
   max-width: 40%;
-  padding: 20px;
+  padding: var(--spacing-lg);
 }
 
 .taco-night-img {
   max-width: 100%;
   height: auto;
-  border-radius: 40%;
+  border-radius: var(--border-radius-xl);
 }
 
 .column-layout {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: var(--spacing-lg);
 }
 
 button {
-  background-color: black;
-  color: white;
+  background-color: var(--base-black);
+  color: var(--base-white);
   padding: 8px;
-  border-radius: 6px;
-  font-size: 1rem;
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-sm);
   cursor: pointer;
   border: none;
 }
 
 button:focus {
-  outline: 2px solid black;
-  outline-offset: 2px;
+  outline: var(--focus-outline-black);
+  outline-offset: var(--focus-offset);
 }
 
 button:hover {
-  color: white;
+  color: var(--base-white);
   background-color: var(--spicy-red);
 }
 
@@ -171,12 +206,12 @@ ul {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  gap: 25px;
+  gap: var(--spacing-xl);
 }
 
 ul img {
   max-width: 200px;
-  border-radius: 10px 10px 0 0;
+  border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
   margin: auto;
 }
 
@@ -184,9 +219,9 @@ ul img {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 10px 10px 0 0;
+  border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
   transition: 0.3s;
-  background-color: #faf9f6;
+  background-color: var(--off-white);
 }
 
 .card:hover {
@@ -194,7 +229,7 @@ ul img {
 }
 
 .vegan-icon {
-  color: #146e17;
+  color: var(--veggy-green);
 }
 
 .spicy-icon {
@@ -204,13 +239,13 @@ ul img {
 .filling-requests {
   background-image: url("assets/taco-red.jpeg");
   background-position: center;
-  padding: 15px;
-  border-radius: 10px;
-  color: white;
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  color: var(--base-white);
 
   button:hover {
-    background-color: white;
-    color: black;
+    background-color: var(--base-white);
+    color: var(--base-black);
   }
 }
 
@@ -225,25 +260,25 @@ footer {
   display: flex;
   justify-content: space-between;
   text-align: left;
-  padding: 20px;
+  padding: var(--spacing-lg);
   margin-top: auto;
 }
 
 .og-img {
   max-width: 100%;
   height: auto;
-  border-radius: 25px;
+  border-radius: var(--border-radius-lg);
 }
 
 .socials a {
   text-decoration: none;
-  font-size: 30px;
-  margin: 0 10px;
-  color: black;
+  font-size: var(--font-size-icon);
+  margin: 0 var(--spacing-sm);
+  color: var(--base-black);
 
   :focus {
-    outline: 2px solid black;
-    outline-offset: 2px;
+    outline: var(--focus-outline-black);
+    outline-offset: var(--focus-offset);
   }
 
   :hover {
@@ -256,7 +291,7 @@ dialog {
   width: 60%;
   overflow: auto;
   border: none;
-  border-radius: 10px;
+  border-radius: var(--border-radius-md);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -265,15 +300,15 @@ dialog::backdrop {
 }
 
 .modal-content {
-  background-color: white;
-  padding: 20px;
+  background-color: var(--base-white);
+  padding: var(--spacing-lg);
 }
 
 .address-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
 }
 
 input[type="text"],
@@ -283,41 +318,39 @@ input[type="number"] {
 
 input[type="text"]:focus,
 input[type="number"]:focus {
-  outline: 2px solid black;
-  outline-offset: 2px;
+  outline: var(--focus-outline-black);
+  outline-offset: var(--focus-offset);
 }
 
 .close {
   display: flex;
   justify-self: end;
-  color: black;
-  background-color: white;
-  font-size: 28px;
-  padding: 0 10px;
+  color: var(--base-black);
+  background-color: var(--base-white);
+  font-size: var-(--font-size-icon);
+  padding: 0 var(--spacing-sm);
   border: none;
 }
 
 .close:hover {
-  background-color: black;
-  color: yellow;
+  background-color: var(--base-black);
+  color: var(--base-white);
   cursor: pointer;
 }
 
 .close:focus {
-  background-color: black;
-  color: white;
-  outline: 2px solid black;
-  outline-offset: 2px;
+  background-color: var(--base-black);
+  color: var(--base-white);
+  outline: var(--focus-outline-black);
+  outline-offset: var(--focus-offset);
   cursor: pointer;
 }
 
-
 /* Tablet */
 @media screen and (max-width: 1080px) {
-
   h1 {
-    font-size: 4rem;
-    left: 20px;
+    font-size: var(--font-size-3xl);
+    left: var(--spacing-md);
     bottom: -20px;
   }
 }
@@ -325,21 +358,21 @@ input[type="number"]:focus {
 /* Mobile */
 @media screen and (max-width: 780px) {
   h1 {
-    font-size: 2.5rem;
-    left: 15px;
-    bottom: 10px;
+    font-size: var(--font-size-2xl);
+    left: var(--spacing-md);
+    bottom: var(--spacing-sm);
   }
 
   /* Navigation - Hamburger menu */
   .topnav {
-    padding: 10px 15px;
-    gap: 10px;
+    padding: var(--spacing-sm) var(--spacing-md);
+    gap: var(--spacing-sm);
 
     .menu-toggle {
       display: block;
-      background-color: white;
-      font-size: 1.4rem;
-      padding: 5px;
+      background-color: var(--base-white);
+      font-size: var(--font-size-md);
+      padding: var(--spacing-xs);
       margin-left: auto;
     }
   }
@@ -366,15 +399,15 @@ input[type="number"]:focus {
   }
 
   .topnav.responsive a:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--base-black);
+    color: var(--base-white);
   }
 
   .topnav.responsive a:focus {
-    background-color: black;
-    color: white;
-    outline: 2px solid black;
-    outline-offset: 2px;
+    background-color: var(--base-black);
+    color: var(--base-white);
+    outline: var(--focus-outline-black);
+    outline-offset: var(--focus-offset);
     z-index: 9;
   }
 
@@ -389,11 +422,11 @@ input[type="number"]:focus {
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-xl)
     min-width: auto;
   }
 
   h3 {
-    font-size: 1.3rem;
+    font-size: var(--font-size-md);
   }
 }
