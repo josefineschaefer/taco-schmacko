@@ -125,7 +125,6 @@ a:focus {
 }
 
 .img-container {
-  float: right;
   max-width: 40%;
   padding: 20px;
 }
@@ -223,13 +222,14 @@ ul img {
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
   text-align: left;
   padding: 20px;
   margin-top: auto;
 }
 
 .og-img {
-  display: block;
   max-width: 100%;
   height: auto;
   border-radius: 25px;
