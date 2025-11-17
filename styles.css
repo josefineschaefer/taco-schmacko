@@ -288,7 +288,8 @@ input[type="number"]:focus {
 }
 
 .close {
-  float: right;
+  display: flex;
+  justify-self: end;
   color: black;
   background-color: white;
   font-size: 28px;
