@@ -35,7 +35,7 @@
   --font-size-4xl: 6rem;
   --font-size-icon: 28px;
 
-/* Focus States  */
+  /* Focus States  */
   --focus-outline-black: 2px solid var(--base-black);
   --focus-outline-white: 2px solid var(--base-white);
   --focus-offset: 2px;
@@ -49,6 +49,90 @@ body {
   margin: 0;
 }
 
+/* Base Styles  */
+h1 {
+  font-family: "Climate Crisis", sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size-4xl);
+  line-height: 1;
+  color: var(--base-white);
+  text-align: left;
+  position: absolute;
+  bottom: -39px;
+  left: var(--spacing-2xl);
+}
+
+h2 {
+  min-width: 30%;
+}
+
+h4 {
+  text-align: center;
+  margin: var(--spacing-xs);
+  padding: var(--spacing-xs);
+}
+
+button {
+  background-color: var(--base-black);
+  color: var(--base-white);
+  padding: 8px;
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  border: none;
+
+  :focus {
+    outline: var(--focus-outline-black);
+    outline-offset: var(--focus-offset);
+  }
+
+  :hover {
+    color: var(--base-white);
+    background-color: var(--spicy-red);
+  }
+}
+
+a {
+  color: var(--base-black);
+
+  :focus {
+    outline: var(--focus-outline-white);
+    outline-offset: var(--focus-offset);
+  }
+}
+
+section {
+  padding: var(--spacing-3xl);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: var(--spacing-xl);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: var(--spacing-lg);
+  margin-top: auto;
+}
+
+dialog {
+  width: 60%;
+  overflow: auto;
+  border: none;
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  ::backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
 /* Skip link styles */
 .skip {
   position: absolute;
@@ -57,28 +141,24 @@ body {
   width: 0;
   height: 0;
   overflow: hidden;
-}
 
-.skip:focus {
-  clip-path: inset(0%);
-  top: 0;
-  left: 0;
-  display: block;
-  background-color: var(--base-black);
-  color: var(--base-white);
-  padding: var(--spacing-lg);
-  height: auto;
-  width: auto;
-  z-index: 1000;
-}
+  :focus {
+    clip-path: inset(0%);
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: var(--base-black);
+    color: var(--base-white);
+    padding: var(--spacing-lg);
+    height: auto;
+    width: auto;
+    z-index: 1000;
+  }
 
-.skip:hover {
-  background-color: var(--base-white);
-  color: var(--base-black);
-}
-
-section {
-  padding: var(--spacing-3xl);
+  :hover {
+    background-color: var(--base-white);
+    color: var(--base-black);
+  }
 }
 
 .bg-img {
@@ -123,40 +203,9 @@ section {
   outline-offset: var(--focus-offset);
 }
 
-h1 {
-  font-family: "Climate Crisis", sans-serif;
-  font-weight: 400;
-  font-size: var(--font-size-4xl);
-  line-height: 1;
-  color: var(--base-white);
-  text-align: left;
-  position: absolute;
-  bottom: -39px;
-  left: var(--spacing-2xl);
-}
-
-h2 {
-  min-width: 30%;
-}
-
-h4 {
-  text-align: center;
-  margin: var(--spacing-xs);
-  padding: var(--spacing-xs);
-}
-
-a {
-  color: var(--base-black);
-}
-
 p a:hover {
   background-color: var(--dark-gray);
   color: var(--base-white);
-}
-
-a:focus {
-  outline: var(--focus-outline-white);
-  outline-offset: var(--focus-offset);
 }
 
 .img-container {
@@ -176,37 +225,9 @@ a:focus {
   gap: var(--spacing-lg);
 }
 
-button {
-  background-color: var(--base-black);
-  color: var(--base-white);
-  padding: 8px;
-  border-radius: var(--border-radius-sm);
-  font-size: var(--font-size-sm);
-  cursor: pointer;
-  border: none;
-}
-
-button:focus {
-  outline: var(--focus-outline-black);
-  outline-offset: var(--focus-offset);
-}
-
-button:hover {
-  color: var(--base-white);
-  background-color: var(--spicy-red);
-}
-
 .og-story-btn {
   display: block;
   margin: inherit;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  gap: var(--spacing-xl);
 }
 
 ul img {
@@ -256,14 +277,6 @@ ul img {
   object-fit: cover;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-  padding: var(--spacing-lg);
-  margin-top: auto;
-}
-
 .og-img {
   max-width: 100%;
   height: auto;
@@ -287,18 +300,6 @@ footer {
   }
 }
 
-dialog {
-  width: 60%;
-  overflow: auto;
-  border: none;
-  border-radius: var(--border-radius-md);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
 .modal-content {
   background-color: var(--base-white);
   padding: var(--spacing-lg);
@@ -314,12 +315,11 @@ dialog::backdrop {
 input[type="text"],
 input[type="number"] {
   padding: 8px;
-}
 
-input[type="text"]:focus,
-input[type="number"]:focus {
-  outline: var(--focus-outline-black);
-  outline-offset: var(--focus-offset);
+  :focus {
+    outline: var(--focus-outline-black);
+    outline-offset: var(--focus-offset);
+  }
 }
 
 .close {
@@ -330,21 +330,22 @@ input[type="number"]:focus {
   font-size: var-(--font-size-icon);
   padding: 0 var(--spacing-sm);
   border: none;
+
+  :hover {
+    background-color: var(--base-black);
+    color: var(--base-white);
+    cursor: pointer;
+  }
+
+  :focus {
+    background-color: var(--base-black);
+    color: var(--base-white);
+    outline: var(--focus-outline-black);
+    outline-offset: var(--focus-offset);
+    cursor: pointer;
+  }
 }
 
-.close:hover {
-  background-color: var(--base-black);
-  color: var(--base-white);
-  cursor: pointer;
-}
-
-.close:focus {
-  background-color: var(--base-black);
-  color: var(--base-white);
-  outline: var(--focus-outline-black);
-  outline-offset: var(--focus-offset);
-  cursor: pointer;
-}
 
 /* Tablet */
 @media screen and (max-width: 1080px) {
@@ -375,58 +376,56 @@ input[type="number"]:focus {
       padding: var(--spacing-xs);
       margin-left: auto;
     }
-  }
 
-  .topnav a:not(:first-child) {
-    display: none;
-  }
+    a:not(:first-child) {
+      display: none;
+    }
 
-  .topnav.responsive {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+    .topnav.responsive {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
 
-    .menu-toggle {
-      justify-content: flex-end;
+      .menu-toggle {
+        justify-content: flex-end;
+      }
+    }
+
+    .topnav.responsive a {
+      display: flex;
+      width: 100%;
+      text-align: left;
+      border-radius: 0;
+
+      :hover {
+        background-color: var(--base-black);
+        color: var(--base-white);
+      }
+
+      :focus {
+        background-color: var(--base-black);
+        color: var(--base-white);
+        outline: var(--focus-outline-black);
+        outline-offset: var(--focus-offset);
+        z-index: 9;
+      }
+    }
+
+    /* Card grid - Single column on mobile */
+    ul li {
+      flex: 1 1 100%;
+      max-width: 280px;
+    }
+
+    ul img {
+      max-width: 100%;
+    }
+
+    h2 {
+      font-size: var(--font-size-xl) min-width: auto;
+    }
+
+    h3 {
+      font-size: var(--font-size-md);
     }
   }
-
-  .topnav.responsive a {
-    display: flex;
-    width: 100%;
-    text-align: left;
-    border-radius: 0;
-  }
-
-  .topnav.responsive a:hover {
-    background-color: var(--base-black);
-    color: var(--base-white);
-  }
-
-  .topnav.responsive a:focus {
-    background-color: var(--base-black);
-    color: var(--base-white);
-    outline: var(--focus-outline-black);
-    outline-offset: var(--focus-offset);
-    z-index: 9;
-  }
-
-  /* Card grid - Single column on mobile */
-  ul li {
-    flex: 1 1 100%;
-    max-width: 280px;
-  }
-
-  ul img {
-    max-width: 100%;
-  }
-
-  h2 {
-    font-size: var(--font-size-xl)
-    min-width: auto;
-  }
-
-  h3 {
-    font-size: var(--font-size-md);
-  }
-}
