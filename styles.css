@@ -57,8 +57,6 @@ h1 {
   line-height: 1;
   color: var(--base-white);
   text-align: left;
-  position: absolute;
-  bottom: -39px;
   left: var(--spacing-2xl);
 }
 
@@ -163,12 +161,14 @@ dialog {
 }
 
 .bg-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-image: url("assets/taco-red.jpeg");
   min-height: 85vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 /* Navigation */
@@ -289,11 +289,6 @@ ul img {
   font-size: var(--font-size-icon);
   margin: 0 var(--spacing-sm);
   color: var(--base-black);
-
-  &:focus {
-    outline: var(--focus-outline-black);
-    outline-offset: var(--focus-offset);
-  }
 
   &:hover {
     color: var(--spicy-red);
