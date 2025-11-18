@@ -94,6 +94,7 @@ button {
 
 a {
   color: var(--base-black);
+  text-decoration: none;
 
   &:focus {
     outline: var(--focus-outline-white);
