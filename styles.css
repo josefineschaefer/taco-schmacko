@@ -81,12 +81,12 @@ button {
   cursor: pointer;
   border: none;
 
-  :focus {
+  &:focus {
     outline: var(--focus-outline-black);
     outline-offset: var(--focus-offset);
   }
 
-  :hover {
+  &:hover {
     color: var(--base-white);
     background-color: var(--spicy-red);
   }
@@ -95,7 +95,7 @@ button {
 a {
   color: var(--base-black);
 
-  :focus {
+  &:focus {
     outline: var(--focus-outline-white);
     outline-offset: var(--focus-offset);
   }
@@ -128,7 +128,7 @@ dialog {
   border-radius: var(--border-radius-md);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
-  ::backdrop {
+  &::backdrop {
     background-color: rgba(0, 0, 0, 0.4);
   }
 }
@@ -142,7 +142,7 @@ dialog {
   height: 0;
   overflow: hidden;
 
-  :focus {
+  &:focus {
     clip-path: inset(0%);
     top: 0;
     left: 0;
@@ -155,7 +155,7 @@ dialog {
     z-index: 1000;
   }
 
-  :hover {
+  &:hover {
     background-color: var(--base-white);
     color: var(--base-black);
   }
@@ -191,16 +191,16 @@ dialog {
   padding: 3px 16px;
   border-radius: var(--border-radius-md);
   text-decoration: none;
-}
 
-.topnav a:hover {
-  background-color: var(--base-black);
-  color: var(--base-white);
-}
+  &:hover {
+    background-color: var(--base-black);
+    color: var(--base-white);
+  }
 
-.topnav a:focus {
-  outline: var(--focus-outline-white);
-  outline-offset: var(--focus-offset);
+  &:focus {
+    outline: var(--focus-outline-white);
+    outline-offset: var(--focus-offset);
+  }
 }
 
 p a:hover {
@@ -243,10 +243,10 @@ ul img {
   border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
   transition: 0.3s;
   background-color: var(--off-white);
-}
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
 }
 
 .vegan-icon {
@@ -289,12 +289,12 @@ ul img {
   margin: 0 var(--spacing-sm);
   color: var(--base-black);
 
-  :focus {
+  &:focus {
     outline: var(--focus-outline-black);
     outline-offset: var(--focus-offset);
   }
 
-  :hover {
+  &:hover {
     color: var(--spicy-red);
     transform: scale(1.2);
   }
@@ -316,7 +316,7 @@ input[type="text"],
 input[type="number"] {
   padding: 8px;
 
-  :focus {
+  &:focus {
     outline: var(--focus-outline-black);
     outline-offset: var(--focus-offset);
   }
@@ -327,17 +327,17 @@ input[type="number"] {
   justify-self: end;
   color: var(--base-black);
   background-color: var(--base-white);
-  font-size: var-(--font-size-icon);
+  font-size: var(--font-size-icon);
   padding: 0 var(--spacing-sm);
   border: none;
 
-  :hover {
+  &:hover {
     background-color: var(--base-black);
     color: var(--base-white);
     cursor: pointer;
   }
 
-  :focus {
+  &:focus {
     background-color: var(--base-black);
     color: var(--base-white);
     outline: var(--focus-outline-black);
@@ -345,7 +345,6 @@ input[type="number"] {
     cursor: pointer;
   }
 }
-
 
 /* Tablet */
 @media screen and (max-width: 1080px) {
@@ -381,7 +380,7 @@ input[type="number"] {
       display: none;
     }
 
-    .topnav.responsive {
+    &.responsive {
       display: flex;
       flex-direction: column;
       gap: 0;
@@ -391,18 +390,18 @@ input[type="number"] {
       }
     }
 
-    .topnav.responsive a {
+    &.responsive a {
       display: flex;
       width: 100%;
       text-align: left;
       border-radius: 0;
 
-      :hover {
+      &:hover {
         background-color: var(--base-black);
         color: var(--base-white);
       }
 
-      :focus {
+      &:focus {
         background-color: var(--base-black);
         color: var(--base-white);
         outline: var(--focus-outline-black);
@@ -410,22 +409,24 @@ input[type="number"] {
         z-index: 9;
       }
     }
-
-    /* Card grid - Single column on mobile */
-    ul li {
-      flex: 1 1 100%;
-      max-width: 280px;
-    }
-
-    ul img {
-      max-width: 100%;
-    }
-
-    h2 {
-      font-size: var(--font-size-xl) min-width: auto;
-    }
-
-    h3 {
-      font-size: var(--font-size-md);
-    }
   }
+
+  /* Card grid - Single column on mobile */
+  ul li {
+    flex: 1 1 100%;
+    max-width: 280px;
+  }
+
+  ul img {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: var(--font-size-xl);
+    min-width: auto;
+  }
+
+  h3 {
+    font-size: var(--font-size-md);
+  }
+}
