@@ -36,10 +36,10 @@
         Ready to order your delicious tacos? Click the button below to get
         started!
       </p>
-      <button id="orderBtn">Get Started</button>
-      <dialog id="orderModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button aria-hidden="true" id="orderBtn">Get Started</button>
+      <div id="orderModal" class="modal" aria-modal="true" aria-labelledby="modalTitle">
         <div class="modal-content">
-          <button class="close">&times;</button>
+          <button tabindex="-1"class="close">&times;</button>
           <h2 id="modalTitle">Add your address</h2>
           <form class="address-form">
             <label for="name">Full Name:</label>
@@ -54,7 +54,7 @@
           <button>Save</button>
           <button>Cancel</button>
         </div>
-      </dialog>
+      </div>
       <h3>Pick your Protein</h3>
       <p>
         We've got a range of <span style="text-decoration:underline">mouth-watering fillings</span> lined up for you - check it
@@ -147,7 +147,7 @@
         <form action="submit_favorite.html" method="post">
           <label for="favorite">Your favorite taco filling:</label>
           <input type="text" id="favorite" name="favorite" required />
-          <button type="submit">Submit</button>
+          <button role="button" type="submit">Submit</button>
         </form>
       </div>
       <h4> Choose your Sauce</h4>
@@ -254,12 +254,12 @@
     var btn = document.getElementById("orderBtn");
     var span = document.getElementsByClassName("close")[0];
 
-    btn.addEventListener("click", () => {
-      modal.showModal();
-    });
+    btn.onclick = function() {
+  modal.style.display = "block";
+}
 
     span.onclick = function () {
-      modal.close();
+      modal.style.display = "none";
     }
 
     function toggleMenu() {
