@@ -33,4 +33,4 @@ Have fun, explore, and happy testing!
 - [Workshop Introduction Slide](https://docs.google.com/presentation/d/e/2PACX-1vR9nHgvdvjnYfxAGOFRvepoZR2upuAJcv0QinAB4E53csl0wGM6IcgDY2wwwU67mKkZoYJCYex0vnSU/pub?start=false&loop=false&delayms=3000)
 - [Summary: Accessibility Testing with Chrome DevTools](https://dev.to/josefine/accessibility-testing-with-chrome-devtools-2bl4 )
 - [Workshop Notion](https://www.notion.so/Accessibility-Testing-with-Chrome-DevTools-2ae782089d8b808f932ff551cbcb9664?source=copy_link)
-- - [Chrome Docs](https://developer.chrome.com/docs/accessibility)
+- [Chrome Docs](https://developer.chrome.com/docs/accessibility)
