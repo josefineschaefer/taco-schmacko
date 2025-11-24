@@ -17,9 +17,9 @@
     <a href="#main" class="skip">Skip to main content</a>
     <div class="bg-img">
       <nav class="topnav" id="topnav">
-        <a class="menu-toggle" href="javascript:void(0);" onclick="toggleMenu()">
+        <button class="menu-toggle" href="javascript:void(0);" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">
           <i class="fa-solid fa-bars"></i>
-        </a>
+        </button>
         <a href="#home">Taco Schmacko 🌮</a>
         <a href="#order">Order now</a>
         <a href="#menu">Browse Menu</a>
@@ -272,10 +272,14 @@
 
     function toggleMenu() {
       var x = document.getElementById("topnav");
+      var menuButton = document.querySelector(".menu-toggle");
+      
       if (x.className === "topnav") {
         x.className += " responsive";
+        menuButton.setAttribute("aria-expanded", "true");
       } else {
         x.className = "topnav";
+        menuButton.setAttribute("aria-expanded", "false");
       }
     }
   </script>

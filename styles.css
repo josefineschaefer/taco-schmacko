@@ -370,10 +370,16 @@ input[type="number"] {
 
     .menu-toggle {
       display: block;
+      color: black;
       background-color: var(--base-white);
-      font-size: var(--font-size-md);
+      font-size: var(--font-size-xl);
       padding: var(--spacing-xs);
       margin-left: auto;
+
+      &:hover {
+        background-color: var(--base-black);
+        color: var(--base-white);
+      }
     }
 
     a:not(:first-child) {
@@ -390,10 +396,15 @@ input[type="number"] {
       }
     }
 
+    &.responsive button {
+      width: 100%;
+      border-radius: 0;
+      text-align: right;
+    }
+
     &.responsive a {
       display: flex;
       width: 100%;
-      text-align: left;
       border-radius: 0;
 
       &:hover {
