@@ -1,4 +1,4 @@
-# Taco Schmacko - Accessibility Testing with Chrome DevTools 🌮
+# Taco Schmacko — Accessibility Testing with Chrome DevTools 🌮
 
 Welcome to the DevFest Brussels Accessibility Testing Workshop repo!
 This [corny taco delivery service website](https://josefineschaefer.github.io/taco-schmacko/) is our playground for exploring accessibility testing with Chrome DevTools (and beyond). 
@@ -7,18 +7,18 @@ This [corny taco delivery service website](https://josefineschaefer.github.io/ta
 
 1. `with-accessibility-bugs` branch
 
-It does what it says on the tin: this branch deliberately contains _a lot_ of Accessibility related issues. It is your job to find, and if you like, fix them. 
+It does what it says on the tin: this branch deliberately contains _a lot_ of accessibility-related issues. It is your job to find and, if you like, fix them. 
 
 2. `main` branch
 
-Stear clear for now. This branch is the more accessible version of the same website, and should be used in the end, or when you get very stuck. No peaking 😉
+Steer clear for now. This branch is the more accessible version of the same website and should be used in the end or when you get very stuck. No peeking 😉
 
 ### How to use? 🔍
 
-1. Use [published website](https://josefineschaefer.github.io/taco-schmacko/) for testing first. 
-   Test with all the tools we've just discussed: everything which is available in Chrome DevTools, including the automated Lighthouse Accessibility Report, the Accessibility Tree, rendering different views and user preferences, but also manual testing, such as using the keyboard to navigate the page, inspecting elements and color contrast etc.
+1. Use the [published website](https://josefineschaefer.github.io/taco-schmacko/) for testing first. 
+   Test with all the tools we've just discussed: everything that is available in Chrome DevTools, including the automated Lighthouse Accessibility Report, the Accessibility Tree, rendering different views and user preferences, but also manual testing, such as using the keyboard to navigate the page, inspecting elements, color contrast, etc.
 
-3. If you like, and there is time, next, you can clone the repo, checkout the branch containing the Accessibility bugs and attempt to fix them.
+3. If you like, and there is time, next, you can clone the repo, check out the branch containing the accessibility bugs and attempt to fix them.
 
 4. When you feel like you are done, you can check the main branch to see how it compares.
 
