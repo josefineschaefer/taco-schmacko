@@ -1,13 +1,13 @@
 # Taco Schmacko - Accessibility Testing with Chrome DevTools 🌮
 
 Welcome to the DevFest Brussels Accessibility Testing Workshop repo!
-This corny taco delivery service website is our playground for exploring accessibility testing with Chrome DevTools (and beyond). 
+This [corny taco delivery service website](https://josefineschaefer.github.io/taco-schmacko/) is our playground for exploring accessibility testing with Chrome DevTools (and beyond). 
 
 ## What's inside? 👀
 
 1. `with-accessibility-bugs` branch
 
-It does what it says on the tin: this branch deliverately contains _a lot_ of Accessibility related issues. It is your job to find, and if you like, fix them. 
+It does what it says on the tin: this branch deliberately contains _a lot_ of Accessibility related issues. It is your job to find, and if you like, fix them. 
 
 2. `main` branch
 
