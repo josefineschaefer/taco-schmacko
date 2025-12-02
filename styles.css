@@ -367,6 +367,13 @@ input[type="number"] {
   .topnav {
     padding: var(--spacing-sm) var(--spacing-md);
     gap: var(--spacing-sm);
+    width: 100%;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      gap: 0;
+    }
 
     .menu-toggle {
       display: block;
@@ -382,17 +389,43 @@ input[type="number"] {
       }
     }
 
-    a:not(:first-child) {
+    ul li {
       display: none;
     }
 
+    /* When menu is responsive (open) */
     &.responsive {
       display: flex;
       flex-direction: column;
+      align-items: flex-end;
       gap: 0;
 
-      .menu-toggle {
-        justify-content: flex-end;
+      ul {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      li {
+        display: flex;
+      }
+
+      a {
+        display: flex;
+        width: 100%;
+        border-radius: 0;
+
+        &:hover {
+          background-color: var(--base-black);
+          color: var(--base-white);
+        }
+
+        &:focus {
+          background-color: var(--base-black);
+          color: var(--base-white);
+          outline: var(--focus-outline-black);
+          outline-offset: var(--focus-offset);
+          z-index: 9;
+        }
       }
     }
 
@@ -401,43 +434,25 @@ input[type="number"] {
       border-radius: 0;
       text-align: right;
     }
-
-    &.responsive a {
-      display: flex;
-      width: 100%;
-      border-radius: 0;
-
-      &:hover {
-        background-color: var(--base-black);
-        color: var(--base-white);
-      }
-
-      &:focus {
-        background-color: var(--base-black);
-        color: var(--base-white);
-        outline: var(--focus-outline-black);
-        outline-offset: var(--focus-offset);
-        z-index: 9;
-      }
-    }
   }
+}
 
-  /* Card grid - Single column on mobile */
-  ul li {
-    flex: 1 1 100%;
-    max-width: 280px;
-  }
+/* Card grid - Single column on mobile */
+.filling-list {
+  flex: 1 1 100%;
+  max-width: 280px;
+}
 
-  ul img {
-    max-width: 100%;
-  }
+.filling-list img {
+  max-width: 100%;
+}
 
-  h2 {
-    font-size: var(--font-size-xl);
-    min-width: auto;
-  }
+h2 {
+  font-size: var(--font-size-xl);
+  min-width: auto;
+}
 
-  h3 {
-    font-size: var(--font-size-md);
-  }
+h3 {
+  font-size: var(--font-size-md);
+}
 }
