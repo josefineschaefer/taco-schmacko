@@ -17,15 +17,18 @@
     <a href="#main" class="skip">Skip to main content</a>
     <div class="bg-img">
       <nav class="topnav" id="topnav">
-        <button class="menu-toggle" href="javascript:void(0);" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">
+        <button class="menu-toggle" href="javascript:void(0);" onclick="toggleMenu()" aria-label="Open menu"
+          aria-expanded="false">
           <i class="fa-solid fa-bars"></i>
         </button>
-        <a href="#home">Taco Schmacko 🌮</a>
-        <a href="#order">Order now</a>
-        <a href="#menu">Browse Menu</a>
-        <a href="#favorites">Customer Favorites</a>
-        <a href="#work">Work for us</a>
-        <a href="#contact">Get in touch</a>
+        <ul>
+          <li><a href="#home">Taco Schmacko 🌮</a></li>
+          <li><a href="#order">Order now</a></li>
+          <li><a href="#menu">Browse Menu</a></li>
+          <li><a href="#favorites">Customer Favorites</a></li>
+          <li><a href="#work">Work for us</a></li>
+          <li><a href="#contact">Get in touch</a></li>
+        </ul>
       </nav>
       <h1>Taco </br>Schmacko</h1>
     </div>
@@ -229,18 +232,28 @@
       <div class="socials">
         <h2>Follow Us</h2>
         <p>Come find us on Socials:</p>
-        <a href="https://www.facebook.com" aria-label="Follow Taco Schmack on Facebook">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://www.twitter.com" aria-label="Follow Taco Schmacko on Twitter">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-        <a href="https://www.instagram.com" aria-label="Follow Taco Schmacko on Instagram">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.pinterest.com" aria-label="Follow Taco Schmacko on Pinterest">
-          <i class="fa-brands fa-pinterest"></i>
-        </a>
+        <nav aria-label="socials">
+          <ul>
+            <a href="https://www.facebook.com" aria-label="Follow Taco Schmack on Facebook">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </ul>
+          <ul>
+            <a href="https://www.twitter.com" aria-label="Follow Taco Schmacko on Twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </ul>
+          <ul>
+            <a href="https://www.instagram.com" aria-label="Follow Taco Schmacko on Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </ul>
+          <ul>
+            <a href="https://www.pinterest.com" aria-label="Follow Taco Schmacko on Pinterest">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+          </ul>
+        </nav>
       </div>
       <p>Sign up for our newsletter:</p>
       <form action="subscribe_newsletter.html" method="post">
@@ -273,7 +286,7 @@
     function toggleMenu() {
       var x = document.getElementById("topnav");
       var menuButton = document.querySelector(".menu-toggle");
-      
+
       if (x.className === "topnav") {
         x.className += " responsive";
         menuButton.setAttribute("aria-expanded", "true");
