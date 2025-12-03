@@ -283,6 +283,10 @@ ul img {
   border-radius: var(--border-radius-lg);
 }
 
+.socials {
+  display: flex;
+}
+
 .socials a {
   text-decoration: none;
   font-size: var(--font-size-icon);
