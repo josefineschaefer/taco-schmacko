@@ -365,15 +365,11 @@ input[type="number"] {
 
   /* Navigation - Hamburger menu */
   .topnav {
+    display: flex;
+    flex-direction: column;
     padding: var(--spacing-sm) var(--spacing-md);
     gap: var(--spacing-sm);
     width: 100%;
-
-    ul {
-      padding: 0;
-      margin: 0;
-      gap: 0;
-    }
 
     .menu-toggle {
       display: block;
@@ -393,16 +389,16 @@ input[type="number"] {
       display: none;
     }
 
-    /* When menu is responsive (open) */
+    /* When mobile menu is open */
     &.responsive {
       display: flex;
-      flex-direction: column;
-      align-items: flex-end;
       gap: 0;
 
       ul {
         flex-direction: column;
         width: 100%;
+        gap: 0;
+        margin: 0;
       }
 
       li {
@@ -435,24 +431,22 @@ input[type="number"] {
       text-align: right;
     }
   }
-}
 
-/* Card grid - Single column on mobile */
-.filling-list {
-  flex: 1 1 100%;
-  max-width: 280px;
-}
+  /* Card grid - Single column on mobile */
+  .filling-list {
+    flex: 1 1 100%;
+  }
 
-.filling-list img {
-  max-width: 100%;
-}
+  .filling-list img {
+    max-width: 280px;
+  }
 
-h2 {
-  font-size: var(--font-size-xl);
-  min-width: auto;
-}
+  h2 {
+    font-size: var(--font-size-xl);
+    min-width: auto;
+  }
 
-h3 {
-  font-size: var(--font-size-md);
-}
+  h3 {
+    font-size: var(--font-size-md);
+  }
 }
