@@ -1,6 +1,6 @@
 # Taco Schmacko — Accessibility Testing with Chrome DevTools 🌮
 
-Welcome to the DevFest Brussels Accessibility Testing Workshop repo!
+Welcome to the Accessibility Testing Workshop repo!
 This [corny taco delivery service website](https://josefineschaefer.github.io/taco-schmacko/) is our playground for exploring accessibility testing with Chrome DevTools (and beyond). 
 
 ## What's inside? 👀
